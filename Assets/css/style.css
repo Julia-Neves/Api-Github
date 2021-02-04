@@ -1,0 +1,249 @@
+*{
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  
+body {
+  height: 100vh;
+}
+  
+
+  
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  background-color: pink;
+}
+  
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+  
+.logo {
+  width: 64px;
+  height: 64px;
+  margin-left: 20px;
+}
+  
+.titulo {
+  color: black;
+  margin-left: 10px;
+  font-size: 24px;
+}
+  
+.form-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.search {
+  width: 35px;
+  height: 35px;
+}
+  
+#form input {
+  margin-left: 10px;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 5px;
+}
+  
+#form button {
+  margin-right: 20px;
+  margin-left: 3px;
+  border: 2px solid white;
+  background: black;
+  border-radius: 8px;
+  padding: 5px;
+  color: white;
+  outline: none;
+}
+  
+
+  
+.introducao {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+  
+.invisivel {
+  display: none;
+  width: 0;
+  height: 0;
+}
+  
+  
+.main {
+  padding-top: 40px;
+  width: 100%;
+  background-color: rgb(248, 211, 216);
+}
+  
+.imagemLogo {
+  text-align: center;
+  margin-top: 60px;
+}
+  
+.logoGit {
+  width: 850px;
+}
+  
+.container-usuario {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+  
+.usuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+  
+.avatarGit {
+  border: 3px solid #000000;
+  border-radius: 50%;
+  width: 300px;
+  margin-bottom: 15px;
+}
+  
+.descricaoUsuario {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+  
+.descricaoUsuario p {
+  margin-bottom: 8px;
+}
+  
+.spanUsuario {
+  font-weight: bold;
+}
+  
+.repositorio {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  
+.repositorios {
+  width: 200px;
+  padding: 40px;
+  margin: 10px;
+  border: 2px solid black;
+  text-align: center;
+}
+  
+.repositorios a {
+  word-break: break-all;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+  
+.repositorios a:hover {
+  text-decoration: underline;
+}
+  
+.repositorios a:visited {
+  color: black;
+}
+  
+ 
+   
+  
+.texto-erro {
+  color: red;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+  
+ 
+ 
+      /*////////////////*/
+  
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    align-items: center;
+}
+  
+  .logo-header {
+    margin-bottom: 5px;
+  }
+  
+  .logo {
+    margin-left: 0;
+  }
+  
+  .titulo {
+    font-size: 22px;
+  }
+  
+  #form button {
+    margin-right: 0;
+  }
+  
+  .introducao {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  
+  .logoGit {
+    width: 350px;
+  }
+  
+  .usuario {
+    flex-direction: column;
+  }
+  
+  .descricaoUsuario {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  
+  .repositorios:last-child {
+    margin-bottom: 20px;
+  }
+}
+  
+@media (max-width: 576px) {
+  .introducao {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .logoGit {
+    width: 200px;
+  }
+  
+  #form input {
+    width: 130px;
+  }
+  
+  .avatarGit {
+    width: 200px;
+  }
+
+  .titulo {
+    font-size: 18px;
+  }
+
+  .descricaoUsuario {
+    margin: 0 20px;
+  }
+  
+  .repositorios:last-child {
+    margin-bottom: 20px;
+  }
+}

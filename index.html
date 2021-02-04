@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/css/reset.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <title>Projeto Api GitHub</title>
+</head>
+  <body>
+    <header class="header">
+      <div class="logo-header">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="./Assets/img/silhueta-do-logotipo-do-github-em-um-quadrado.png"
+            alt="Logo da empresa"
+          />
+        </a>
+        <h1 class="titulo">GitHub Search</h1>
+      </div>
+      <div class="form-header">
+        <img
+          class="search"
+          src="./Assets/img/lupa.png"
+          alt="lupa"
+        />
+        <form id="form">
+          <input
+            type="text"
+            id="inputUser"
+            name="inputUser"
+            placeholder="Nome do usuário"
+          />
+          <button type="submit" id="botaoPesquisar">Pesquisar</button>
+        </form>
+      </div>
+    </header>
+    <main class="main">
+      <p class="texto-erro mensagemErro invisivel">
+        Não foi possível encontrar esse usuário. Tente novamente :)
+      </p>
+      <p class="introducao">
+      Nesta página você pode procurar por perfis de usuários do GitHub, Sinta-se a vontade.
+      </p>
+
+      <div class="imagemLogo">
+        <img
+          class="logoGit"
+          src="./Assets/img/R3305ef6618b7c26c8f0028bf8231cce7.jpg"
+          alt="Logo GitHub"
+        />
+      </div>
+
+      <div class="container-usuario invisivel">
+        <div class="usuario" id="usuario"></div>
+
+        <div class="repositorio" id="repositorio"></div>
+      </div>
+    </main>
+  </body>
+  <script defer src="./Models/Usuario.js"></script>
+  <script defer src="./Models/Repositorio.js"></script>
+  <script defer src="./Views/RepositorioView.js"></script>
+  <script defer src="./Views/UsuarioView.js"></script>
+  <script defer src="./Controllers/RepositorioController.js"></script>
+  <script defer src="./Controllers/UsuarioController.js"></script>
+  <script defer src="./Assets/js/main.js"></script>
+</html>
